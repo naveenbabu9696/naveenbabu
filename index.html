@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Naveen Babu — Portfolio</title>
+  <meta name="description" content="Portfolio of Naveen Babu - developer, designer, and problem solver." />
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/favicon.svg">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">NaveenB</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌗</button>
+      <nav id="mainNav" class="main-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="resume" href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1>Hello — I’m Naveen.</h1>
+        <p class="lead">I build web experiences that are simple, modern and accessible. I focus on frontend engineering, UX and performance.</p>
+        <p class="cta"><a href="#projects" class="btn">See projects</a> <a href="#contact" class="btn ghost">Contact me</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I’m a software developer with a passion for building user-centered web applications. I enjoy turning complex problems into elegant, accessible solutions. I’m currently exploring modern frontend frameworks, progressive web apps and design systems.</p>
+          <p>Location: India • Email: <a href="mailto:hello@naveen.dev">hello@naveen.dev</a></p>
+        </div>
+        <div class="profile-card">
+          <img src="/avatar-placeholder.png" alt="Naveen avatar" />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h2>Skills</h2>
+      <div class="skill-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Accessibility</div>
+      </div>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Projects</h2>
+      <div id="projectsGrid" class="grid"></div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>If you'd like to work together or have questions, drop a message.</p>
+      <form id="contactForm" action="mailto:hello@naveen.dev" method="post" enctype="text/plain">
+        <label>Name<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Naveen Babu — <a href="https://github.com/naveenbabu9696" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

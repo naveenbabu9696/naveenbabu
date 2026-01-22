@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Awesome Portfolio Template",
+    "description": "A responsive portfolio website built with modern HTML, CSS and vanilla JavaScript.",
+    "tech": ["HTML","CSS","JavaScript"],
+    "repo": "https://github.com/naveenbabu9696/naveenbabu",
+    "live": "https://naveenbabu9696.github.io/naveenbabu/"
+  },
+  {
+    "title": "Project Two (placeholder)",
+    "description": "Description for project two. Replace with your own content.",
+    "tech": ["React","Node.js"],
+    "repo": "",
+    "live": ""
+  },
+  {
+    "title": "Project Three (placeholder)",
+    "description": "Another placeholder project to show layout.",
+    "tech": ["TypeScript","Vite"],
+    "repo": "",
+    "live": ""
+  }
+]
