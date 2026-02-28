@@ -1,37 +1,83 @@
-// Basic interactivity: theme toggle, mobile menu and projects rendering
 const themeToggle = document.getElementById('themeToggle');
 const menuBtn = document.getElementById('menuBtn');
 const mainNav = document.getElementById('mainNav');
 const yearEl = document.getElementById('year');
+const projectsGrid = document.getElementById('projectsGrid');
 
-yearEl.textContent = new Date().getFullYear();
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
 
-themeToggle.addEventListener('click', ()=>{
-  document.documentElement.classList.toggle('light');
-  const isLight = document.documentElement.classList.contains('light');
-  localStorage.setItem('site-theme', isLight? 'light':'dark');
-});
+const setTheme = (theme) => {
+  const isLight = theme === 'light';
+  document.documentElement.classList.toggle('light', isLight);
+  localStorage.setItem('site-theme', theme);
+};
 
-menuBtn.addEventListener('click', ()=>{
-  mainNav.classList.toggle('open');
-});
+const savedTheme = localStorage.getItem('site-theme');
+if (savedTheme === 'light' || savedTheme === 'dark') {
+  setTheme(savedTheme);
+}
 
-// load projects from projects.json
-fetch('/projects.json').then(r=>r.json()).then(list=>{
-  const grid = document.getElementById('projectsGrid');
-  grid.innerHTML = '';
-  list.forEach(p=>{
-    const div = document.createElement('article');
-    div.className = 'project';
-    div.innerHTML = `<h3>${p.title}</h3><p>${p.description}</p><p><strong>Tech:</strong> ${p.tech.join(', ')}</p><p><a href="${p.live||p.repo}" target="_blank" rel="noopener" class="btn">View</a></p>`;
-    grid.appendChild(div);
-  })
-}).catch(()=>{
-  document.getElementById('projectsGrid').innerHTML = '<p class="muted">No projects found.</p>'
-});
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const next = document.documentElement.classList.contains('light') ? 'dark' : 'light';
+    setTheme(next);
+  });
+}
 
-// restore theme
-(function(){
-  const t = localStorage.getItem('site-theme');
-  if(t==='light') document.documentElement.classList.add('light');
-})();
+if (menuBtn && mainNav) {
+  menuBtn.addEventListener('click', () => {
+    mainNav.classList.toggle('open');
+  });
+
+  mainNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => mainNav.classList.remove('open'));
+  });
+}
+
+const renderProjects = (projects) => {
+  if (!projectsGrid) {
+    return;
+  }
+
+  if (!Array.isArray(projects) || projects.length === 0) {
+    projectsGrid.innerHTML = '<p class="muted">No projects found.</p>';
+    return;
+  }
+
+  projectsGrid.innerHTML = '';
+  projects.forEach((project) => {
+    const card = document.createElement('article');
+    card.className = 'project';
+
+    const techText = Array.isArray(project.tech) ? project.tech.join(', ') : '';
+    const highlights = Array.isArray(project.highlights)
+      ? `<ul>${project.highlights.map((item) => `<li>${item}</li>`).join('')}</ul>`
+      : '';
+    const href = project.live || project.repo;
+    const action = href
+      ? `<a href="${href}" target="_blank" rel="noopener" class="btn">View</a>`
+      : '';
+
+    card.innerHTML = `
+      <h3>${project.title || ''}</h3>
+      <p class="muted">${project.period || ''}</p>
+      <p>${project.description || ''}</p>
+      ${highlights}
+      <p><strong>Tech:</strong> ${techText}</p>
+      ${action}
+    `;
+
+    projectsGrid.appendChild(card);
+  });
+};
+
+fetch('/projects.json')
+  .then((response) => response.json())
+  .then((data) => renderProjects(data))
+  .catch(() => {
+    if (projectsGrid) {
+      projectsGrid.innerHTML = '<p class="muted">Unable to load projects right now.</p>';
+    }
+  });

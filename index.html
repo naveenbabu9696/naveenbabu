@@ -3,117 +3,227 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Naveen Babu Chilukuri — Frontend Developer</title>
-  <meta name="description" content="Portfolio of Naveen Babu Chilukuri — Frontend Developer (ReactJS, JavaScript, Cloud)." />
+  <title>Naveen Babu Chilukuri — GenAI Engineer | AI Product Engineer</title>
+  <meta name="description" content="Portfolio of Naveen Babu Chilukuri — GenAI Engineer, AI Product Engineer, Frontend specialist (ReactJS, Next.js), Python, and Cloud." />
   <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" href="/favicon.svg">
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="#">NaveenB</a>
-      <button id="themeToggle" aria-label="Toggle theme">🌗</button>
+      <a class="brand" href="#hero">Naveen Babu</a>
       <nav id="mainNav" class="main-nav">
-        <a href="#about">About</a>
+        <a href="#about">Profile</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
-        <a class="resume" href="/resume.html" target="_blank" rel="noopener">Resume</a>
       </nav>
-      <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle theme" class="icon-btn">◐</button>
+        <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+      </div>
     </div>
   </header>
 
   <main>
     <section id="hero" class="hero">
-      <div class="container">
-        <h1>Naveen Babu Chilukuri</h1>
-        <p class="lead">Frontend Developer | ReactJS | JavaScript | Cloud</p>
-        <p class="contact-inline">Phone: <a href="tel:+919494891698">+91 94948 91698</a> • Email: <a href="mailto:naveenbabu9393@gmail.com">naveenbabu9393@gmail.com</a></p>
-        <p class="cta"><a href="#projects" class="btn">See projects</a> <a href="#contact" class="btn ghost">Contact</a></p>
-        <p class="links"><a href="https://linkedin.com/in/chilukurinaveenbabu" target="_blank" rel="noopener">LinkedIn</a> • <a href="https://github.com/Naveenbabu1" target="_blank" rel="noopener">GitHub</a></p>
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h1>Naveen Babu Chilukuri</h1>
+          <p class="lead">GenAI Engineer | AI Product Engineer | Frontend (ReactJS, Next.js) | Python | Cloud</p>
+          <p class="contact-inline">
+            <a href="tel:+919494891698">+91 9494891698</a>
+            <span>•</span>
+            <a href="mailto:naveenbabu9393@gmail.com">naveenbabu9393@gmail.com</a>
+          </p>
+          <p class="links">
+            <a href="https://linkedin.com/in/chilukurinaveenbabu" target="_blank" rel="noopener">LinkedIn</a>
+            <span>•</span>
+            <a href="https://github.com/naveenbabu9696" target="_blank" rel="noopener">GitHub</a>
+          </p>
+          <div class="cta-row">
+            <a href="#projects" class="btn">Explore Projects</a>
+            <a href="#contact" class="btn ghost">Connect</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h2>Focus Areas</h2>
+          <ul>
+            <li>AI-enabled product architecture</li>
+            <li>RAG and agentic workflows</li>
+            <li>Secure AI service layers</li>
+            <li>React + cloud-native delivery</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
-    <section id="about" class="container about">
+    <section id="about" class="container section">
       <h2>Profile</h2>
-      <p>Frontend Developer with 4+ years of professional experience in designing and delivering scalable web applications using ReactJS and modern JavaScript frameworks. Skilled in building responsive user interfaces, integrating RESTful APIs, and collaborating in Agile teams. Demonstrated ability to improve reliability, performance, and maintainability through efficient cloud-based deployments. Passionate about developing user-focused, performant, and scalable software solutions.</p>
-
-      <h3>Education</h3>
-      <ul>
-        <li><strong>Master of Computer Applications (MCA)</strong> — Adikavi Nannaya University (2019 – 2021)</li>
-        <li><strong>Bachelor of Science in Computer Science</strong> — Aditya Degree College (2016 – 2019)</li>
-      </ul>
+      <p>
+        GenAI Engineer and AI Product Engineer with 4.4+ years of experience in building and modernizing enterprise-scale web applications,
+        now focused on designing AI-enabled product architectures and cloud-based AI platforms. Strong expertise in ReactJS,
+        modern frontend engineering, and API-driven systems, combined with experience in designing secure AI service layers,
+        retrieval-augmented workflows, and agentic systems. Comfortable working across frontend, backend, and cloud infrastructure
+        to design scalable, production-ready AI-powered applications.
+      </p>
     </section>
 
-    <section id="skills" class="container skills">
+    <section id="skills" class="container section">
       <h2>Skills</h2>
-      <div class="skill-list">
-        <div class="skill">ReactJS</div>
-        <div class="skill">JavaScript (ES6+)</div>
-        <div class="skill">HTML5</div>
-        <div class="skill">CSS3</div>
-        <div class="skill">Redux</div>
-        <div class="skill">TanStack Query</div>
-        <div class="skill">RESTful APIs</div>
-        <div class="skill">AWS (S3, CloudFront, EC2)</div>
-        <div class="skill">CI/CD (Jenkins)</div>
-        <div class="skill">Jest / Vitest</div>
-        <div class="skill">Accessibility (WCAG)</div>
+      <div class="skills-grid">
+        <article class="skill-group">
+          <h3>Frontend</h3>
+          <p>ReactJS, Next.js, JavaScript (ES6+), HTML5, CSS3, Redux, TanStack Query</p>
+        </article>
+        <article class="skill-group">
+          <h3>Backend & APIs</h3>
+          <p>Node.js, Python, Core Java, FastAPI, AWS Lambda</p>
+        </article>
+        <article class="skill-group">
+          <h3>GenAI & Agentic Systems</h3>
+          <p>Prompt Engineering, RAG, LangChain, LangGraph, AI Agents, Tool Calling</p>
+        </article>
+        <article class="skill-group">
+          <h3>Vector Databases</h3>
+          <p>FAISS, Pinecone (basics), Semantic Search, Embedding Pipelines</p>
+        </article>
+        <article class="skill-group">
+          <h3>AI & NLP</h3>
+          <p>Speech-to-Text, Text-to-Speech, Real-time Translation, Chatbots, Document Q&A, Call Intelligence</p>
+        </article>
+        <article class="skill-group">
+          <h3>Cloud & DevOps</h3>
+          <p>AWS (EC2, S3, CloudFront, Lambda), Git, Jenkins, CI/CD, Cloud VM Deployment</p>
+        </article>
+        <article class="skill-group">
+          <h3>Databases</h3>
+          <p>SQL</p>
+        </article>
+        <article class="skill-group">
+          <h3>Testing & Quality</h3>
+          <p>Jest, Vitest, Performance Optimization</p>
+        </article>
+        <article class="skill-group">
+          <h3>Practices</h3>
+          <p>Agile, Scrum, Component-Based Architecture, RBAC, Code Reviews</p>
+        </article>
       </div>
     </section>
 
-    <section id="experience" class="container experience">
+    <section id="experience" class="container section">
       <h2>Experience</h2>
-      <div class="job">
-        <h3>System Engineer — Tata Consultancy Services (TCS), Hyderabad, India</h3>
-        <p class="muted">Oct 2021 – Present</p>
+      <article class="timeline-card">
+        <div class="timeline-head">
+          <h3>System Engineer</h3>
+          <p>Tata Consultancy Services (TCS), Hyderabad, India</p>
+          <span>Oct 2021 – Present</span>
+        </div>
         <ul>
-          <li>Developed and maintained enterprise-scale ReactJS applications supporting multiple business units.</li>
-          <li>Led migration of legacy IBM WebSphere applications to modern React-based frontend architecture.</li>
-          <li>Built reusable UI components and standardized frontend patterns to improve maintainability.</li>
-          <li>Implemented secure role-based access control (RBAC) across admin and internal portals.</li>
-          <li>Integrated RESTful and ServiceNow APIs to automate incident workflows and improve data consistency.</li>
-          <li>Improved automated testing efficiency by ~60% using Jest and Vitest integrated with CI/CD pipelines.</li>
-          <li>Deployed applications on AWS S3 and CloudFront ensuring scalability and high availability.</li>
+          <li>Contributed to the design and development of enterprise-scale React applications using modular component architecture, reusable hooks, and maintainable state management.</li>
+          <li>Played a key role in modernizing legacy IBM WebSphere applications into a React-based frontend architecture.</li>
+          <li>Developed reusable UI components and standardized frontend patterns to improve long-term maintainability across multiple modules.</li>
+          <li>Worked on secure role-based access control (RBAC) mechanisms for internal portals and admin workflows.</li>
+          <li>Integrated RESTful and enterprise APIs to streamline workflows and ensure data consistency across systems.</li>
+          <li>Collaborated with QA and DevOps teams to introduce modern testing practices and improve CI/CD reliability.</li>
+          <li>Supported cloud deployment workflows using AWS S3 and CloudFront, ensuring scalable frontend delivery.</li>
         </ul>
+      </article>
 
-        <h4>Notable Projects</h4>
-        <ul>
-          <li><strong>Incident Reporting Web Application</strong> (Nov 2021 – Mar 2025) — Modernized a legacy incident reporting system into a scalable ReactJS web platform with Admin, Agent and Internal portals and real-time dashboards.</li>
-          <li><strong>Core Reporting System</strong> (Apr 2025 – Sep 2025) — Developed analytics and reporting features using ReactJS and TanStack Query, optimized data fetching for faster report generation.</li>
-          <li><strong>Admin Workforce Provisioning</strong> (Oct 2025 – Present) — Migrating an Ember-based internal tool to ReactJS, building admin interfaces with multi-level access control.</li>
-        </ul>
+      <h3>Client Projects</h3>
+      <div class="project-list-grid">
+        <article class="mini-card">
+          <h4>Incident Reporting Web Application</h4>
+          <p class="muted">Nov 2021 – Mar 2025</p>
+          <ul>
+            <li>Contributed to transformation of a legacy incident reporting system into a modern ReactJS web application with role-based access and modular UI architecture.</li>
+            <li>Worked on complex form workflows, validation logic, and API-driven data flows to improve usability for internal stakeholders.</li>
+            <li>Participated in performance tuning efforts to improve rendering efficiency and responsiveness across key user journeys.</li>
+          </ul>
+        </article>
+
+        <article class="mini-card">
+          <h4>Core Reporting System</h4>
+          <p class="muted">Apr 2025 – Sep 2025</p>
+          <ul>
+            <li>Contributed to analytics dashboards and reporting views using ReactJS and TanStack Query for large datasets.</li>
+            <li>Worked on data visualization components, filtering workflows, and query optimization.</li>
+            <li>Collaborated with backend teams to align frontend data consumption with evolving API contracts.</li>
+          </ul>
+        </article>
+
+        <article class="mini-card">
+          <h4>Workforce Provisioning Platform</h4>
+          <p class="muted">Oct 2025 – Present</p>
+          <ul>
+            <li>Contributing to migration of legacy Ember.js applications to a modern React-based frontend architecture.</li>
+            <li>Working on user provisioning, role management, and access workflows for workforce management use-cases.</li>
+            <li>Developing user management dashboards and analytics views for workforce utilization and capacity planning.</li>
+            <li>Collaborating with product and backend teams to refine workflows and improve usability for operations and HR stakeholders.</li>
+          </ul>
+        </article>
+
+        <article class="mini-card">
+          <h4>C3 Configuration Tools</h4>
+          <p class="muted">Jan 2026 – Present</p>
+          <ul>
+            <li>Supporting migration of configuration and management tools from Ember.js to React for maintainability and performance.</li>
+            <li>Working on complex rule-based configuration flows and validation logic.</li>
+            <li>Developing analytics and monitoring views to provide visibility into configuration states and operational metrics.</li>
+            <li>Collaborating with cross-functional teams to align frontend behavior with backend configuration engines and APIs.</li>
+          </ul>
+        </article>
       </div>
-
-      <h3>Certification</h3>
-      <p>Google Associate Cloud Engineer — 2023</p>
     </section>
 
-    <section id="projects" class="container projects">
-      <h2>Projects</h2>
+    <section id="projects" class="container section projects">
+      <h2>Personal Projects</h2>
       <div id="projectsGrid" class="grid"></div>
     </section>
 
-    <section id="contact" class="container contact">
-      <h2>Contact</h2>
-      <p>Phone: <a href="tel:+919494891698">+91 94948 91698</a></p>
-      <p>Email: <a href="mailto:naveenbabu9393@gmail.com">naveenbabu9393@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/chilukurinaveenbabu" target="_blank" rel="noopener">chilukurinaveenbabu</a></p>
+    <section id="awards" class="container section">
+      <h2>Awards (Tata Consultancy Services)</h2>
+      <div class="award-grid">
+        <span>Star Award</span>
+        <span>On The Spot Award</span>
+        <span>Service & Commitment Award</span>
+        <span>Star of the Month Award</span>
+        <span>Feedback Enthusiast Certificate</span>
+        <span>Xcelerate Warrior Certificate</span>
+        <span>Continuous Feedback Star Certificate</span>
+        <span>Elevate Wings Award</span>
+        <span>Feedback Enabler Certificate</span>
+      </div>
+    </section>
 
-      <form id="contactForm" action="mailto:naveenbabu9393@gmail.com" method="post" enctype="text/plain">
-        <label>Name<input name="name" required></label>
-        <label>Email<input name="email" type="email" required></label>
-        <label>Message<textarea name="message" rows="5" required></textarea></label>
-        <button class="btn">Send</button>
-      </form>
+    <section id="certifications" class="container section">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>IBM Full Stack Software Developer Professional Certificate (Coursera)</li>
+        <li>IBM Front-End Developer Professional Certificate (Coursera)</li>
+        <li>Developing Front-End Apps with React (IBM)</li>
+        <li>Introduction to Cloud Computing (IBM)</li>
+        <li>Developing Cloud Applications with Node.js and React (IBM)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <p>Phone: <a href="tel:+919494891698">+91 9494891698</a></p>
+        <p>Email: <a href="mailto:naveenbabu9393@gmail.com">naveenbabu9393@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/chilukurinaveenbabu" target="_blank" rel="noopener">linkedin.com/in/chilukurinaveenbabu</a></p>
+        <p>GitHub: <a href="https://github.com/naveenbabu9696" target="_blank" rel="noopener">github.com/naveenbabu9696</a></p>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Naveen Babu Chilukuri — <a href="https://github.com/Naveenbabu1" target="_blank" rel="noopener">GitHub</a></p>
+      <p>© <span id="year"></span> Naveen Babu Chilukuri</p>
     </div>
   </footer>
 

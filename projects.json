@@ -1,22 +1,53 @@
 [
   {
-    "title": "Awesome Portfolio Template",
-    "description": "A responsive portfolio website built with modern HTML, CSS and vanilla JavaScript.",
-    "tech": ["HTML","CSS","JavaScript"],
-    "repo": "https://github.com/naveenbabu9696/naveenbabu",
-    "live": "https://naveenbabu9696.github.io/naveenbabu/"
+    "title": "Yeptron — AI-Enabled E-Commerce Platform (In Progress)",
+    "period": "2024 – Present",
+    "description": "Designing architecture for an AI-enabled e-commerce platform with intelligent product discovery, guided journeys, and retrieval-backed interactions.",
+    "highlights": [
+      "Exploring AI-assisted search, personalized recommendations, and conversational shopping experiences",
+      "Defining data pipelines and retrieval workflows for catalogs, FAQs, and user queries",
+      "Prototyping AI-powered frontend experiences for browsing, comparison, and checkout guidance"
+    ],
+    "tech": ["ReactJS", "Next.js", "RAG", "Semantic Search", "AI Workflows"],
+    "repo": "",
+    "live": "https://yeptron.com"
   },
   {
-    "title": "Project Two (placeholder)",
-    "description": "Description for project two. Replace with your own content.",
-    "tech": ["React","Node.js"],
+    "title": "Jobs4.in — AI-Assisted Screening & Resume Shortlisting (In Progress)",
+    "period": "2024 – Present",
+    "description": "Designing AI-assisted candidate screening and recruiter-facing decision support for job platform use-cases.",
+    "highlights": [
+      "Exploring semantic matching between job descriptions and candidate profiles",
+      "Defining ingestion pipelines for resumes and job posts with retrieval QA",
+      "Prototyping profile summarization and ranking views for recruiters"
+    ],
+    "tech": ["Python", "RAG", "NLP", "Semantic Matching", "Dashboard UX"],
+    "repo": "",
+    "live": "https://jobs4.in"
+  },
+  {
+    "title": "Private AI Inference Platform on Cloud VM (In Progress)",
+    "period": "2025",
+    "description": "Designing a private cloud VM-based AI inference platform with controlled access and secure API abstraction.",
+    "highlights": [
+      "Architecting backend API layers to protect underlying inference endpoints",
+      "Exploring authN/authZ and request routing patterns for controlled consumption",
+      "Experimenting with observability and rate-limiting for reliable service usage"
+    ],
+    "tech": ["Python", "FastAPI", "Cloud VM", "Security", "Rate Limiting"],
     "repo": "",
     "live": ""
   },
   {
-    "title": "Project Three (placeholder)",
-    "description": "Another placeholder project to show layout.",
-    "tech": ["TypeScript","Vite"],
+    "title": "AI-Enabled Mobile OS & Smart Dialer (R&D Concept)",
+    "period": "2025 – Present",
+    "description": "Concept R&D for an AI-first mobile operating system with intelligent dialer and real-time communication intelligence.",
+    "highlights": [
+      "Designing intelligent dial pad behavior with real-time voice translation",
+      "Researching AI-assisted call handling, summarization, and automated responses",
+      "Exploring on-device + cloud architectures for low-latency privacy-aware experiences"
+    ],
+    "tech": ["AI Agents", "Speech AI", "Real-time Translation", "Mobile AI Architecture"],
     "repo": "",
     "live": ""
   }
